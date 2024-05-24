@@ -49,11 +49,6 @@ function handleSubmit(event) {
             } else {
                 const markup = addToImgBox(params.hits);
                 imagesBox.innerHTML = markup;
-                let simpleLightBox = new SimpleLightbox('.images-box a', {
-                    captionDelay: 250,
-                    captionsData: 'alt',
-                    captionClass: 'text-center',
-                });
                 simpleLightBox.refresh();
             }
         })
@@ -62,3 +57,9 @@ function handleSubmit(event) {
         });
     event.target.elements.query.value = '';
 }
+
+let simpleLightBox = new SimpleLightbox('.images-box a', {
+    captionDelay: 250,
+    captionsData: 'alt',
+    captionClass: 'text-center',
+});
