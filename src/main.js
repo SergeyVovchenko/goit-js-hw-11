@@ -28,6 +28,7 @@ function handleSubmit(event) {
             position: 'topRight',
             maxWidth: '432px',
         });
+        imagesBox.innerHTML = '';
         return;
     }
 
@@ -45,6 +46,7 @@ function handleSubmit(event) {
                     position: 'topRight',
                     maxWidth: '432px',
                 });
+                imagesBox.innerHTML = '';
                 return;
             } else {
                 const markup = addToImgBox(params.hits);
